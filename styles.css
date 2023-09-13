@@ -39,11 +39,47 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
-    flex-direction: row;
 }
 
 .options{
     background-color:#222222;
     border-radius: 2rem;
+    display: flex;
+    color: white;
+    padding: 0 1.5rem;
+    gap: 1rem;
 }
+
+.options .options-color{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options .options-color p{
+    margin-right: 2rem;
+}
+
+.options .options-dimensions{
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.options .options-erase-and-clear{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.options .options-erase-and-clear img{
+    max-width: 2vh;
+    max-height: auto;
+}
+
     
