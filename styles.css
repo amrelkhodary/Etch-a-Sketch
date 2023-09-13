@@ -1,4 +1,5 @@
-body, html{
+body,
+html {
     padding: 0;
     margin: 0;
     min-width: 100%;
@@ -11,18 +12,38 @@ body {
     background-repeat: no-repeat;
 }
 
-/*these are the styles for nav section*/
+/* these are the styles for nav section */
 .nav {
     font-family: 'Noto Kufi Arabic', sans-serif;
     font-family: 'Pacifico', cursive;
     display: flex;
     justify-content: center;
     align-items: end;
-    font-size:1.5rem;
-    background-color: rgba(0,0,0,0.5);
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
 
-.nav h1{
+.nav h1 {
     margin-bottom: 0;
 }
+
+/* these are the styles for the content section */
+.content {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* these are the styles for the options section */
+.options-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    flex-direction: row;
+}
+
+.options{
+    background-color:#222222;
+    border-radius: 2rem;
+}
+    
