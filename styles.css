@@ -59,8 +59,15 @@ body {
 }
 
 .options .options-color p{
-    margin-right: 2rem;
+    margin-right: 0.5rem;
 }
+
+.options .options-color #color-picker{
+    width: 3vh;
+    height: 3vh;
+    margin-right: 0.5rem;
+}
+
 
 .options .options-dimensions{
     flex:2;
