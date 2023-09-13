@@ -29,7 +29,8 @@ body {
 }
 
 /* these are the styles for the content section */
-.content {
+/* also adds font for footer section */
+.content, .footer {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -96,4 +97,19 @@ body {
     background-color: white;
     border: 4px solid black;
 }
-    
+
+/* these are the footer styles */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 1rem;
+}
+
+.footer p{
+    letter-spacing: 0.2rem;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
