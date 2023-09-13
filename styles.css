@@ -82,4 +82,18 @@ body {
     max-height: auto;
 }
 
+/* these are the styles for the canvas section */
+.canvas-container{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas{
+    width: 75vh;
+    height: 75vh;
+    background-color: white;
+    border: 4px solid black;
+}
     
