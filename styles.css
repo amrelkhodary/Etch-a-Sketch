@@ -1,3 +1,28 @@
-body{
-    
+body, html{
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(./assets/Etch-a-Sketch.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*these are the styles for nav section*/
+.nav {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size:1.5rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.nav h1{
+    margin-bottom: 0;
 }
