@@ -46,3 +46,18 @@ sliderText.textContent = "16" // setting default value
 slider.addEventListener("input", () => {
     sliderText.textContent = slider.value;
 })
+
+//make the eraser image white when cliked
+let eraserIcon = document.querySelector(".eraser");
+
+eraserIcon.addEventListener("click", () => {
+    if(eraserActive)
+    {
+        eraserActive = false;
+        eraserIcon.src = "./assets/eraser.png";
+    }
+    else{
+        eraserActive = true;
+        eraserIcon.src = "./assets/eraser-white.png";
+    }
+})
