@@ -7,7 +7,7 @@
  * 
  * -------------------------------canvas section functionality-----------------------------------------------
  * The canvas will need from the options section the following:
- *      A) the color (erase is eqv. to color=white)
+ *      A) the color
  *      B) the dimensions
  * TODO(4): make it so that whenever the user changes the color a variable named color changes, and if
  *          the user chooses the erase option, make color = white
@@ -41,10 +41,11 @@ rainbowCheckbox.addEventListener("change", () => {
 let slider = document.querySelector("#grid-dimensions");
 let sliderText = document.querySelector(".grid-dimensions-label");
 
-sliderText.textContent = "16" // setting default value
+sliderText.textContent = dimensions + ""; // setting default value
 
 slider.addEventListener("input", () => {
-    sliderText.textContent = slider.value;
+    dimensions = slider.value;
+    sliderText.textContent = dimensions + "";
 })
 
 //make the eraser image white when cliked
@@ -60,4 +61,11 @@ eraserIcon.addEventListener("click", () => {
         eraserActive = true;
         eraserIcon.src = "./assets/eraser-white.png";
     }
+})
+
+//get the color the user picker from the color picker
+let colorPicker = document.querySelector("#color-picker");
+colorPicker.addEventListener("input", () => {
+    color = colorPicker.value;
+    console.log(color);
 })
