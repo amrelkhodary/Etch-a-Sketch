@@ -24,6 +24,7 @@ let colorText = document.querySelector(".options-color p");
 let rainbowCheckbox = document.querySelector("#rainbow");
 let rainbowLabel = document.querySelector(".rainbow-label");
 
+//make color text dimmer when rainbow option is toggled
 rainbowCheckbox.addEventListener("change", () => {
     if(rainbowCheckbox.checked)
     {
@@ -34,4 +35,14 @@ rainbowCheckbox.addEventListener("change", () => {
         colorText.style.color = "white";
         rainbowLabel.style["font-weight"] = "normal";
     }
+})
+
+//change the value of the slider text when slider is moved
+let slider = document.querySelector("#grid-dimensions");
+let sliderText = document.querySelector(".grid-dimensions-label");
+
+sliderText.textContent = "16" // setting default value
+
+slider.addEventListener("input", () => {
+    sliderText.textContent = slider.value;
 })
